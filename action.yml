@@ -1,0 +1,12 @@
+name: 'Close Specified Issue Action'
+description: 'This action closes the issue specified by an issue number.'
+inputs:
+  issue_number:
+    description: 'Issue number'
+    required: true
+  token:
+    description: 'GITHUB_TOKEN'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
